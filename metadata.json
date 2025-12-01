@@ -1,0 +1,5 @@
+{
+  "name": "ExamAI - WAEC/NECO Prep",
+  "description": "A dynamic, AI-powered examination preparation system generating unique tutorials and quizzes for WAEC, NECO, and GCE candidates.",
+  "requestFramePermissions": []
+}

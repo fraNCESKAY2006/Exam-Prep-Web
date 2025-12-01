@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExamAI - WAEC/NECO/GCE Prep</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <!-- KaTeX JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <style>
+      body { 
+        font-family: 'Plus Jakarta Sans', sans-serif; 
+        background-color: #F4F4F6;
+        color: #1D1D1F;
+      }
+      
+      /* Smooth scrolling */
+      html { scroll-behavior: smooth; }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar { width: 10px; }
+      ::-webkit-scrollbar-track { background: #f1f1f1; }
+      ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 5px; border: 2px solid #f1f1f1; }
+      ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+      /* Markdown Content Styling */
+      .prose h1 { font-size: 1.8rem; font-weight: 800; margin-bottom: 1rem; color: #1A2C6E; letter-spacing: -0.02em; }
+      .prose h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; color: #1A2C6E; }
+      .prose h3 { font-size: 1.25rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #6A5AE0; }
+      .prose p { margin-bottom: 1rem; line-height: 1.7; color: #4b5563; font-size: 1.05rem; }
+      .prose ul { list-style-type: none; padding-left: 0; margin-bottom: 1.5rem; }
+      .prose li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: #374151; }
+      .prose li::before { 
+        content: "•"; 
+        color: #6A5AE0; 
+        font-weight: bold; 
+        position: absolute; 
+        left: 0; 
+        font-size: 1.2em; 
+        line-height: 1;
+      }
+      .prose strong { font-weight: 700; color: #1A2C6E; }
+      .prose pre { background: #1A2C6E; color: #e2e8f0; padding: 1.25rem; border-radius: 1rem; overflow-x: auto; font-family: monospace; margin: 1.5rem 0; font-size: 0.9rem; border: 1px solid #2d3f7f; }
+      .prose blockquote { border-left: 4px solid #F6C667; padding-left: 1rem; font-style: italic; color: #64748b; margin: 1.5rem 0; background: #fffbeb; padding: 1rem; border-radius: 0 1rem 1rem 0; }
+      
+      /* KaTeX Adjustments */
+      .katex { font-size: 1.1em; }
+      .katex-display { margin: 1em 0; overflow-x: auto; overflow-y: hidden; }
+
+      /* Animation Utilities */
+      .animate-float { animation: float 6s ease-in-out infinite; }
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="antialiased selection:bg-[#6A5AE0] selection:text-white">
+    <div id="root" class="min-h-screen flex flex-col"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
